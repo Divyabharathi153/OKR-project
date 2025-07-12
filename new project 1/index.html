@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MyOKR - Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <h1>MyOKR Dashboard</h1>
+    
+    <section id="okr-form">
+      <h2>Create New OKR</h2>
+      <form id="create-okr-form">
+        <input type="text" id="okr-title" placeholder="Objective Title" required />
+        <input type="text" id="okr-key-result" placeholder="Key Result" required />
+        <select id="user-select"></select>
+        <button type="submit">Add OKR</button>
+      </form>
+    </section>
+
+    <section id="okr-list">
+      <h2>Team OKRs</h2>
+      <ul id="okrs-container"></ul>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
